@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Silverton Eco Adventures</title>
+<meta name="description" content="Contact Silverton Eco Adventures in Silverton, BC. mark@silvertonecoadventures.com">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 19L8 7L12.5 14.5L15.5 9.5L22 19H2Z" fill="#8fb3c4"/>
+        <circle cx="17.5" cy="6" r="2" fill="#f6f1e7"/>
+      </svg>
+      <span class="logo-text-wrap">
+        Silverton Eco Adventures
+        <span class="logo-sub">Slocan Valley, BC</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mountains.html">Mountains</a></li>
+        <li><a href="lake.html">Lake</a></li>
+        <li><a href="snow.html">Snow</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-contact">
+  <span class="hero-eyebrow">Get in touch</span>
+  <h1>Contact Us</h1>
+  <p>Don&rsquo;t hesitate to reach out with the contact information below, or send a message using the form.</p>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+      <form class="contact-form">
+        <div>
+          <label for="name">Name (required)</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email (required)</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Question or Comment</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid" style="background:var(--forest); color:var(--white); border-color:var(--forest); justify-self:start;">Submit</button>
+        <p class="form-note">This form opens your email client to send the message directly. To collect messages without opening email, connect a form service such as Formspree or Netlify Forms &mdash; see the README for setup notes.</p>
+      </form>
+      <div class="contact-info">
+        <h3>Silverton Eco Adventures</h3>
+        <p>Silverton BC, V0G 1S0<br>Canada</p>
+        <p><a href="mailto:mark@silvertonecoadventures.com">mark@silvertonecoadventures.com</a></p>
+        <h3>Follow Along</h3>
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=100090666763214" target="_blank" rel="noopener">Facebook</a><br>
+          <a href="https://www.instagram.com/silvertonecoadventures/" target="_blank" rel="noopener">Instagram</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Join the Mailing List</h4>
+        <p style="color:#cddccd; font-size:0.9rem;">Subscribe and receive 5% off your first adventure.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Type your email&hellip;" required aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div>
+        <h4>The Small Print</h4>
+        <a href="contact.html">Risk Waiver</a>
+      </div>
+      <div>
+        <h4>Social Media</h4>
+        <a href="https://www.facebook.com/profile.php?id=100090666763214" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/silvertonecoadventures/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:mark@silvertonecoadventures.com">mark@silvertonecoadventures.com</a>
+        <a href="contact.html">Silverton BC, V0G 1S0, Canada</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Silverton Eco Adventures</span>
+      <span>Slocan Valley, British Columbia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//YOUR_MATOMO_URL/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'YOUR_SITE_ID']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+</body>
+</html>

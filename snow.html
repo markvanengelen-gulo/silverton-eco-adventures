@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snow | Silverton Eco Adventures</title>
+<meta name="description" content="X-country and backcountry ski tours, snowshoeing and downhill ski days in Valhalla and Kokanee Parks, Kootenays BC.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 19L8 7L12.5 14.5L15.5 9.5L22 19H2Z" fill="#8fb3c4"/>
+        <circle cx="17.5" cy="6" r="2" fill="#f6f1e7"/>
+      </svg>
+      <span class="logo-text-wrap">
+        Silverton Eco Adventures
+        <span class="logo-sub">Slocan Valley, BC</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mountains.html">Mountains</a></li>
+        <li><a href="lake.html">Lake</a></li>
+        <li><a href="snow.html" class="active">Snow</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-snow">
+  <span class="hero-eyebrow">Snow</span>
+  <h1>Winter brings spectacular white views, thrills and exercise in the Kootenays.</h1>
+  <p>Valhalla and Kokanee Parks are the perfect spot for your snow adventures.</p>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">Activities</h2>
+    <div class="card-grid">
+      <div class="card snow-accent">
+        <h3>X-country Ski Tours</h3>
+        <p>Join our guides on X-country ski tours for 1, 2 or 4 hours. Full day and multi day trips also available. Ski rental included, or bring your own!</p>
+      </div>
+      <div class="card snow-accent">
+        <h3>Backcountry Ski Tours</h3>
+        <p>We can help plan an unbelievable experience with expert backcountry guides, lodges and more!</p>
+      </div>
+      <div class="card snow-accent">
+        <h3>Snowshoeing Tours</h3>
+        <p>Join our guides on snowshoeing tours all across Slocan Valley for 1, 2 or 4 hours. Full day and multi day trips also available. Snowshoe rental included, or bring your own!</p>
+      </div>
+      <div class="card snow-accent">
+        <h3>Downhill Ski or Snowboard Day</h3>
+        <p>Join our guides for full day downhill ski or snowboard adventures at Summit, Whitewater, Red Mountain, Revelstoke or other great spots in the Kootenays.</p>
+      </div>
+      <div class="card snow-accent">
+        <h3>X-country Ski &amp; Hotsprings</h3>
+        <p>Enjoy a nice X-country ski and conclude with some local hotsprings to relax.</p>
+      </div>
+      <div class="card snow-accent">
+        <h3>Custom Multi Day Snow Trips</h3>
+        <p>We&rsquo;ll help plan a custom multi day trip in the Kootenays together with you!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="testimonial-grid">
+      <blockquote class="testimonial">
+        &ldquo;Wow, these views are amazing!&rdquo;
+        <cite>&mdash; Maria</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        &ldquo;These natural hotsprings after a hike are awesome!&rdquo;
+        <cite>&mdash; Dion</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band">
+      <h2>Let&rsquo;s plan your next adventure together.</h2>
+      <a class="btn btn-solid" href="contact.html">Contact us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Join the Mailing List</h4>
+        <p style="color:#cddccd; font-size:0.9rem;">Subscribe and receive 5% off your first adventure.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Type your email&hellip;" required aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div>
+        <h4>The Small Print</h4>
+        <a href="contact.html">Risk Waiver</a>
+      </div>
+      <div>
+        <h4>Social Media</h4>
+        <a href="https://www.facebook.com/profile.php?id=100090666763214" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/silvertonecoadventures/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:mark@silvertonecoadventures.com">mark@silvertonecoadventures.com</a>
+        <a href="contact.html">Silverton BC, V0G 1S0, Canada</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Silverton Eco Adventures</span>
+      <span>Slocan Valley, British Columbia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//YOUR_MATOMO_URL/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'YOUR_SITE_ID']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+</body>
+</html>
