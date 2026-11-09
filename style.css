@@ -65,7 +65,7 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.02em;
 }
 
-.logo svg { flex-shrink: 0; }
+.logo img { flex-shrink: 0; width: 38px; height: 38px; }
 
 .logo-text-wrap { display: flex; flex-direction: column; line-height: 1.15; }
 
@@ -123,11 +123,13 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
 }
 
-.hero-home { background: linear-gradient(135deg, var(--forest) 0%, var(--lake) 55%, var(--lake-light) 100%); }
-.hero-mountains { background: linear-gradient(135deg, #16301f 0%, var(--forest-light) 60%, #4c7a52 100%); }
-.hero-lake { background: linear-gradient(135deg, #0f2e40 0%, var(--lake) 55%, var(--lake-light) 100%); }
-.hero-snow { background: linear-gradient(135deg, #33505e 0%, var(--snow) 55%, var(--snow-light) 100%); }
-.hero-contact { background: linear-gradient(135deg, var(--forest) 0%, var(--lake) 100%); }
+.hero { position: relative; background-size: cover; background-position: center; padding: 130px 24px 110px; }
+.hero h1, .hero p { text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35); }
+.hero-home { background-image: linear-gradient(180deg, rgba(14, 30, 22, 0.55), rgba(14, 30, 22, 0.35) 55%, rgba(14, 30, 22, 0.6)), url("images/hero-home.jpg"); background-position: center 60%; }
+.hero-mountains { background-image: linear-gradient(180deg, rgba(14, 30, 22, 0.5), rgba(14, 30, 22, 0.3) 55%, rgba(14, 30, 22, 0.55)), url("images/hero-mountains.jpg"); background-position: center 45%; }
+.hero-lake { background-image: linear-gradient(180deg, rgba(10, 34, 48, 0.55), rgba(10, 34, 48, 0.35) 55%, rgba(10, 34, 48, 0.6)), url("images/hero-lake.jpg"); }
+.hero-snow { background-image: linear-gradient(180deg, rgba(30, 50, 62, 0.6), rgba(30, 50, 62, 0.4) 55%, rgba(30, 50, 62, 0.65)), url("images/hero-snow.jpg"); background-position: center 40%; }
+.hero-contact { background-image: linear-gradient(180deg, rgba(14, 30, 22, 0.6), rgba(14, 30, 22, 0.45)), url("images/hero-home.jpg"); background-position: center 70%; }
 
 .hero h1 {
   font-size: clamp(2rem, 4.5vw, 3.1rem);
@@ -247,9 +249,10 @@ section { padding: 64px 0; }
 
 .tile:hover { transform: translateY(-4px); }
 
-.tile-mountains { background: linear-gradient(160deg, var(--forest-light), #16301f); }
-.tile-lake { background: linear-gradient(160deg, var(--lake-light), #0f2e40); }
-.tile-snow { background: linear-gradient(160deg, var(--snow-light), #33505e); }
+.tile { background-size: cover; background-position: center; min-height: 230px; }
+.tile-mountains { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(14, 30, 22, 0.85)), url("images/tile-mountains.jpg"); }
+.tile-lake { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(10, 34, 48, 0.85)), url("images/tile-lake.jpg"); }
+.tile-snow { background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(30, 50, 62, 0.85)), url("images/tile-snow.jpg"); }
 
 .tile span { font-weight: 700; font-size: 1.25rem; }
 .tile small { opacity: 0.85; margin-top: 4px; display: block; }
@@ -268,8 +271,8 @@ section { padding: 64px 0; }
 
 .spotlight-media {
   border-radius: var(--radius);
-  min-height: 220px;
-  background: linear-gradient(135deg, var(--lake), var(--forest-light));
+  min-height: 280px;
+  background: #0f2e40 url("images/dive-boxcar.jpg") center / cover no-repeat;
 }
 
 .spotlight-tag {
@@ -445,3 +448,6 @@ section { padding: 64px 0; }
   }
   .main-nav a { display: block; padding: 10px 0; }
 }
+
+/* ---------- Footer logo ---------- */
+.footer-logo { width: 240px; height: auto; margin: 0 0 36px; opacity: 0.95; }
